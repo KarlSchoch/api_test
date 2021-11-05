@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "aws-lambda-custom-docker"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-104b4uj4c5vck"
+s3_prefix = "aws-lambda-custom-docker"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["MyCustomDocker=905974298851.dkr.ecr.us-east-2.amazonaws.com/docker-lambda"]
